@@ -1,0 +1,103 @@
+body {
+    background-color: #17181f;
+    color: #98b91d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+form {
+    border: 3px solid #30313D;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+}
+
+form input[type="text"] {
+    font-size: 16px;
+    background: none;
+    color: #fff;
+    border: 0;
+    padding: 7px;
+    display: block;
+    width: 100%;
+}
+
+form button {
+
+    background-color: #c4229b;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.task {
+    background-color: #2f2f3a;
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    transition: opacity .3s linear;
+}
+
+
+div.task.done {
+    opacity: 0.3;
+}
+
+div.task-name,
+div.task form {
+    font-size: 24px;
+    margin-left: 12px;
+    flex-grow: 1;
+}
+
+div.task span {
+    position: relative;
+}
+
+div.task span:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    top: 10px;
+    transition: width .1s linear;
+}
+
+div.task.done span:before {
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+.deleteBtn {
+    background-color: rgb(218, 41, 41);
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+
+div.task input {
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.checkbox {
+    font-size: 120px;
+}
